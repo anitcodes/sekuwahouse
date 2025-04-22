@@ -9,7 +9,6 @@
 /* Hide the scrollbar but allow scrolling */
 ::-webkit-scrollbar {
     display: none;
-    /* This hides the scrollbar */
 }
 
 html,
@@ -189,20 +188,23 @@ nav .nav-social a {
     }
 }
 
-/* Responsive of navbar*/
-@media screen and (max-width: 768px) {
-    #hamburger {
-        display: block;
+@media (min-width: 1025px) {
+    .nav-items {
+        position: static;
+        height: auto;
+        flex-direction: row;
+        background: none;
     }
 
-    nav .nav-items {
+    .hamburger {
         display: none;
     }
 
-    nav .nav-social {
-        display: none;
+    .nav-social {
+        display: flex !important;
     }
 }
+
 
 /* Footer section  */
 footer {
