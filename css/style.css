@@ -6,6 +6,17 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* custom selection color */
+::selection {
+    background-color: #e60000; 
+    color: white;              
+}
+
+::moz-selection {
+    background-color: #e60000; /* For Firefox */
+    color: white;
+}
+
 /* Hide the scrollbar but allow scrolling */
 ::-webkit-scrollbar {
     display: none;
@@ -344,17 +355,76 @@ footer {
 }
 
 /* main body section */
-main {
+.hero {
+    position: relative;
+    background-image: url('../images/home-bg.jpg');
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
     height: 100vh;
-    width: 100%;
-    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    background-attachment: fixed;
 }
 
-main #home {
-    height: 100%;
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background: url("https://images.unsplash.com/photo-1669717879542-65eb286d1b23?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay for better text visibility */
 }
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in-out 0.5s;
+}
+
+.hero-content .btn {
+    padding: 15px 30px;
+    background-color: #e60000;
+    /* SekuwaHouse brand color */
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    animation: slideIn 1s ease-in-out 1s;
+}
+
+.hero-content .btn:hover {
+    background-color: #b30000;
+    /* Darker shade for hover effect */
+    transform: scale(1.05);
+}
+
+
+
