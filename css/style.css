@@ -358,7 +358,6 @@ footer {
 .hero {
     position: relative;
     background-image: url('../images/home-bg.jpg');
-    /* Replace with your image path */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -378,7 +377,6 @@ footer {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    /* Dark overlay for better text visibility */
 }
 
 .hero-content {
@@ -388,6 +386,8 @@ footer {
     color: white;
     padding: 20px;
     max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .hero-title {
@@ -408,7 +408,6 @@ footer {
 .hero-content .btn {
     padding: 15px 30px;
     background-color: #e60000;
-    /* SekuwaHouse brand color */
     color: white;
     text-decoration: none;
     border-radius: 30px;
@@ -422,9 +421,36 @@ footer {
 
 .hero-content .btn:hover {
     background-color: #b30000;
-    /* Darker shade for hover effect */
     transform: scale(1.05);
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem; /* Smaller title size for tablets */
+    }
 
+    .hero-subtitle {
+        font-size: 1.2rem; /* Smaller subtitle for tablets */
+    }
 
+    .hero-content .btn {
+        font-size: 1rem; /* Smaller button font size for tablets */
+        padding: 12px 25px; /* Adjust padding for better fitting */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem; /* Further reduce font size for mobile */
+    }
+
+    .hero-subtitle {
+        font-size: 1rem; /* Smaller subtitle for mobile */
+    }
+
+    .hero-content .btn {
+        font-size: 0.9rem; /* Even smaller button font size for mobile */
+        padding: 10px 20px; /* Adjust padding for small screens */
+    }
+}
