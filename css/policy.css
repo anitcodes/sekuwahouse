@@ -48,6 +48,11 @@
     color: #444;
     margin-bottom: 10px;
   }
+
+  .footer-section p,
+  .footer-bottom p{
+    color : #fff;
+  }
   
   ul {
     padding-left: 20px;
