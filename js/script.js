@@ -26,6 +26,16 @@ fetch('footer.html')
       .then(res => res.text())
       .then(data => document.getElementById('footer').innerHTML = data);
 
+ //load about us page
+fetch('about.html')
+.then(res => res.text())
+.then(data => document.getElementById('about-us').innerHTML = data);
+
+ //load menu page
+ fetch('menu.html')
+ .then(res => res.text())
+ .then(data => document.getElementById('menu-sections').innerHTML = data);
+ 
 
 
     

@@ -407,10 +407,11 @@ footer {
 
 .hero-content .btn {
     padding: 15px 30px;
+    margin-left: 10px;
     background-color: #e60000;
     color: white;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 10px;
     font-size: 1.25rem;
     font-weight: 600;
     text-transform: uppercase;
