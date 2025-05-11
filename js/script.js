@@ -29,12 +29,12 @@ fetch('footer.html')
  //load about us page
 fetch('about.html')
 .then(res => res.text())
-.then(data => document.getElementById('about-us').innerHTML = data);
+.then(data => document.getElementById('about-container').innerHTML = data);
 
  //load menu page
  fetch('menu.html')
  .then(res => res.text())
- .then(data => document.getElementById('menu-sections').innerHTML = data);
+ .then(data => document.getElementById('menu-container').innerHTML = data);
  
 
 
